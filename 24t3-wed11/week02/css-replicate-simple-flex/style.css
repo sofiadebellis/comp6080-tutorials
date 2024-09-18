@@ -1,0 +1,39 @@
+.parent-container {
+    width: 400px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+}
+
+.child1 {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+}
+
+.child2 {
+    flex: 1;
+}
+
+.child2-top {
+    flex: 1;
+    background-color: green;
+}
+
+.child2-bottom {
+    flex: 2;
+    background-color: yellow;
+    display: flex;
+    border: 1px solid white;
+}
+
+.child2-bottom-left{
+    flex: 2;
+    border: 1px solid white;
+}
+
+.child2-bottom-right {
+    flex: 1;
+    background-color: green;
+}
