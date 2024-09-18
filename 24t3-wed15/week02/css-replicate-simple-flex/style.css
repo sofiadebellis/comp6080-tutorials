@@ -1,0 +1,43 @@
+.container {
+    width: 800px;
+    height: 500px;
+    background-color: red;
+    display: flex;
+    border: 1px solid white;
+}
+
+.child-left {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+
+}
+
+.child-right {
+    flex: 1;
+    border: 1px solid white;
+}
+
+#child-left-top {
+ background-color: aquamarine;  
+ flex: 1; 
+ border: 1px solid white;
+}
+
+#child-left-bottom {
+    background-color: yellow;
+    flex: 2;
+    display: flex;
+}
+
+#left {
+    flex: 2;
+    border: 1px solid white;
+
+}
+
+#right {
+    background-color: green;
+    flex: 1;
+}
