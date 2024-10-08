@@ -1,11 +1,22 @@
 <script type="text/javascript">
 
 const url = window.location.href;
-console.log(url);
+const queryParam = url.split('?')[1];
+const parts = queryParam.split('&');
+const data = {}
 
-const age = 77;
-const year = new Date().getYear() + 1900; // We have to add 1900
+parts.forEach((parts) => {
+    const i = parts.split('=');
+    data[i[0]] = i[1]
+})
+
+console.log(data)
+
+const { name, age } = data;
+
+console.log(`My name is ${name} and my age is ${age}!`)
+const year = new Date().getYear() + 1900; 
 //  because getYear returns the number of years since 1900
-console.log(year - age);
+console.log(`I was born in ${year - age}`);
 
 </script>

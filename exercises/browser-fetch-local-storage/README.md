@@ -1,6 +1,6 @@
 ## Build a JS webpage using fetch and local storage
 
-A json file is stored at `http://www.cse.unsw.edu.au/~cs6080/raw/data/package.json`.
+A json file is stored at `http://cgi.cse.unsw.edu.au/~cs6080/raw/data/package.json`.
 
 1. Write a basic webpage in `store.html` that fetches the data this resource (URL), decodes the JSON, and then displays it in a well organised flex element/container on the webpage. You are not allowed to add static HTML or CSS to the webpage as part of this activity. You must generate everything on the page dynamically via javascript and DOM manipulation.
 
