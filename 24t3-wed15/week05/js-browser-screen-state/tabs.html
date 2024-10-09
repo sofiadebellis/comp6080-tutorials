@@ -1,8 +1,32 @@
 <!DOCTYPE html>
-<html>
-	<head>
-	</head>
-	<body>
-		
-	</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="#" class="nav-item" id="home-nav">Home</a> |
+    <a href="#" class="nav-item" id="news-nav">News</a> |
+    <a href="#" class="nav-item" id="articles-nav">Articles</a> |
+    <a href="#" class="nav-item" id="about-nav">About</a>
+    <article id="main-content">
+      <div class="page-content" id="home-content">This is the homepage</div>
+      <div class="page-content" id="news-content">This is the news page</div>
+      <div class="page-content" id="articles-content">
+        This is article page-content
+      </div>
+      <div class="page-content" id="about-content">This is the about page</div>
+    </article>
+    <script type="text/javascript">
+	  const tabs = ['home', 'about', 'news', 'articles'];
+	  const setTab = name => {
+		  document.getElementById(`${name}-nav`).addEventListener('click', e => {
+			  tabs.map(tab => document.getElementById(`${tab}-content`).style.display = 'none');
+			  document.getElementById(`${name}-content`).style.display = 'block';
+		  });
+	  }
+	  tabs.map(setTab);
+    </script>
+  </body>
 </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        fetch("https://cgi.cse.unsw.edu.au/~cs6080/raw/data/package.json")
+            .then(res => res.json())
+            .then(res => {
+                localStorage.setItem('6080', JSON.stringify(res))
+                console.log("Fetch: ")
+                console.log(res);
+            })
+            .catch(e => {
+                const data = localStorage.getItem('6080');
+                if (!data) {
+                    console.log("No cached data");
+                    return;
+                }
+                console.log("From cache: ")
+                console.log(JSON.parse(data));
+            })
+    </script>
+</body>
+</html>
