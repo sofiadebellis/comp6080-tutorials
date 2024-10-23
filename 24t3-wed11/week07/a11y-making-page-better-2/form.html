@@ -1,16 +1,16 @@
 <html>
 
 <body>
-    <div>
-        <img src="https://miro.medium.com/max/1188/0*xDY4570Ixw-o3nel.png" style="height:100px" />
+    <div aria-hidden="true">
+        <img src="https://miro.medium.com/max/1188/0*xDY4570Ixw-o3nel.png" alt="a green rectangle" style="height:100px" />
     </div>
 
     <h3 id="formLabel">Contact details</h3>
 
-    <form>
+    <form aria-labelledby="formLabel">
         <div>
             <label for="name">* Name:</label>
-            <input type="text" value="name" id="name" />
+            <input type="text" value="name" id="name" aria-required="true"/>
         </div>
         <div>
             <label for="phone">Phone:</label>
@@ -18,7 +18,7 @@
         </div>
         <div>
             <label for="email">* E-mail:</label>
-            <input type="text" value="email" id="email" />
+            <input type="text" value="email" id="email" aria-required="true"/>
         </div>
     </form>
 
@@ -27,7 +27,7 @@
 
     <br />
 
-    <button disabled>Submit</button>
+    <button disabled aria-disabled="false">Submit</button>
     <div id="descriptionSubmit">Submit form details.</div>
 </body>
 
