@@ -7,6 +7,7 @@ const IDS = {
   passwordError: 'login-password-error',
 }
 
+// eslint-disable-next-line react/prop-types
 function LoginForm({ onSubmit, errors = {} }) {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
