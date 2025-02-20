@@ -1,0 +1,44 @@
+body {
+    font-family: Circular, Arial, Helvetica, sans-serif;
+}
+
+#login {
+    background-color: rgb(57, 130, 136);
+    color: white;
+    border: 2px solid rgb(57, 130, 136);
+
+}
+
+#signup {
+    color: rgb(57, 130, 136);
+    border: 2px solid rgb(57, 130, 136);
+    background-color: white;
+}
+
+.button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+hr {
+    margin-top: 70px;
+    color: grey
+}
+
+#container {
+    display: flex;
+}
+
+.child {
+    flex: 1;
+}
+
+.list-item {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding: 0px;
+}
