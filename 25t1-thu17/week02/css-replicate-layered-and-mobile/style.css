@@ -1,0 +1,30 @@
+body {
+    color: #333333;
+    font-family: Helvetica, sans-serif;
+    padding: 15px;
+}
+
+.article-content {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.article-offset {
+    bottom: 30px;
+    left: 15px;
+    position: relative;
+    width: calc(100% - 55px);
+}
+
+.learn-more {
+    display: flex;
+    justify-content: end;
+}
+
+.testimonies {
+    margin-top: 50px;
+}
+
+.type-testimony {
+    margin-bottom: 20px;
+}
