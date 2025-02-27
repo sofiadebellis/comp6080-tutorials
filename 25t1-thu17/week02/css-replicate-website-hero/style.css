@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 500px;
+}
+
+.child {
+    display: flex,
+}
+
+#top {
+    background-image: url("./assets/exercise_2_landing_page.jpg");
+    height: 80%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.content {
+    height: 100%;
+    margin-left: 20px;
+}
+
+button {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
