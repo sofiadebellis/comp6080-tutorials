@@ -1,5 +1,7 @@
 body {
     font-family: Circular, Arial, Helvetica, sans-serif;
+    background-image: url("./IMG_5811.JPG");
+    opacity: 0.5;
 }
 
 #login {
