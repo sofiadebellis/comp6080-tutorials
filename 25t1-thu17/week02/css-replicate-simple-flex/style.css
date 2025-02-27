@@ -1,0 +1,41 @@
+.parent {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    height: 500px;
+}
+
+.child {
+    display: flex;
+}
+
+#left {
+    background-color: green;
+    flex: 70%;
+    flex-direction: column;
+
+}
+
+#right {
+    background-color: red;
+    flex: 30%;
+}
+
+#top {
+    background-color: green;
+    flex: 1;
+}
+
+#bottom {
+    flex: 2;
+}
+
+#bottom-left {
+    background-color: yellow;
+    flex: 2;
+}
+
+#bottom-right {
+    background-color: green;
+    flex: 1;
+}
