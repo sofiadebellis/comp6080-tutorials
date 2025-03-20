@@ -1,8 +1,30 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	</head>
-	<body>
-		
-	</body>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <a href="#" id="tabHome">Home</a> | <a href="#" id="tabAbout">About</a> |
+      <a href="#" id="tabNews">News</a> |
+      <a href="#" id="tabArticles">Articles</a>
+    </header>
+
+    <div id="popup">
+      Email: <input type="text" /> <br />
+      Name: <input type="text" />
+      <button id="close">Close</button>
+      <button id="submit">Submit</button>
+    </div>
+
+    <div id="page">
+      <div class="page" id="pageHome">This is the homepage</div>
+      <div class="page hide" id="pageAbout">This is the about page</div>
+      <div class="page hide" id="pageNews">This is the news page</div>
+      <div class="page hide" id="pageArticles">This is the articles page</div>
+    </div>
+
+    <footer id="footer"><a id="contactUs" href="#">Contact Us</a></footer>
+    <script src="main.js"></script>
+  </body>
 </html>

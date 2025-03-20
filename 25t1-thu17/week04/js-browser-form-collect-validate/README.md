@@ -10,5 +10,3 @@ Important facts about form state:
  * The submit button remains disabled until both a valid firstName and valid email are entered. The state change occurs on keyup of either input fields.
  * On blur of either input fields, if their value is invalid, the background of the input is turned a light red.
  * On focus of either input fields, we removed any error backgrounds.
-
-> See `solutions/form.html`
