@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #container {
+            width: 400px;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .child {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 50%;
+            height: 33%;
+        }
+    </style>
+  </head>
+  <body>
+    <script type-="text/javascript">
+        const container = document.createElement('div');
+        container.setAttribute('id', 'container')
+        container.innerText = 'Loading... Please wait!';
+        document.body.appendChild(container)
+        const createElement = text => {
+            const box = document.createElement('div');
+            box.className = 'child';
+            box.innerText = text;
+            container.appendChild(box);
+            return box;
+        }
+
+
+        fetch("https://cgi.cse.unsw.edu.au/~cs6080/raw/data/package.json")
+            .then((res) => res.json())
+            .then((res) => {
+                localStorage.setItem('6080', JSON.stringify(res));
+
+                container.innerText = '';
+                renderItems(res);
+            })
+            .catch(error => {
+                container.innerText = '';
+                let data = localStorage.getItem('6080');
+                if (!data) {
+                    displayMessage("There is no data saved in local storage!");
+                }
+
+                renderItems(JSON.parse(data));
+                displayMessage("This data is not live.");
+            })
+
+        const renderItems = res => {
+            const name = createElement('name');
+            const nameVal = createElement(res.name);
+            const primary = createElement('primary');
+            const primaryVal = createElement(res.primary);
+            const reindeers = createElement('reindeers');
+            const reindeersVal = createElement(res.reindeers);
+        }
+
+        const displayMessage = msg => {
+            const para = document.createElement('p');
+            para.innerText = msg;
+            document.body.appendChild(para)
+        }
+    </script>
+  </body>
+</html>

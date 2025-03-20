@@ -15,14 +15,14 @@ This function show reject the promise in the following situations:
 The following call should be successful:
 
 ```js
-getUserByIdAndUsername('1', 'Bret')
+getUserByIdAndUsername("1", "Bret");
 ```
 
 and these should fail:
 
 ```js
-getUserByIdAndUsername('404', 'This user does not exist')
-getUserByIdAndUsername('1', 'Bob')
+getUserByIdAndUsername("404", "This user does not exist");
+getUserByIdAndUsername("1", "Bob");
 ```
 
 When the page loads, call this function with the `id` and `username` query params in the url and add the `loading` class to the body. When the promise is settled:
